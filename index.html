@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Langton family photo website with a slideshow and gallery of cherished memories."
+    />
+    <title>Langton Family | Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Langton Family</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Family moments</p>
+            <h1>Welcome to our family story.</h1>
+            <p>
+              A collection of joyful snapshots from everyday life, countryside walks,
+              cherished pets, and the moments we treasure most.
+            </p>
+            <div class="cta-group">
+              <a class="button primary" href="gallery.html">Browse gallery</a>
+              <a class="button secondary" href="gallery.html?album=uk_birds">See albums</a>
+            </div>
+          </div>
+          <div class="slideshow-shell" aria-live="polite">
+            <div class="slideshow-controls">
+              <button id="slideshow-prev" class="icon-button" aria-label="Previous photo">
+                ‹
+              </button>
+              <button id="slideshow-next" class="icon-button" aria-label="Next photo">
+                ›
+              </button>
+            </div>
+            <img
+              id="slideshow-image"
+              src=""
+              alt="Featured family photo"
+            />
+            <div class="slideshow-caption-box">
+              <p id="slideshow-caption">Loading slideshow…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="album-preview">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Albums</p>
+            <h2>Recent favourites</h2>
+          </div>
+          <div id="album-cards" class="album-cards" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Langton Family Photo Archive</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

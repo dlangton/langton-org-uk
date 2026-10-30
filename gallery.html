@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse the Langton family gallery by album and view each image in a larger lightbox."
+    />
+    <title>Langton Family | Gallery</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Langton Family</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="gallery.html">Gallery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="gallery-page">
+      <section class="container gallery-header">
+        <div class="section-heading left-align">
+          <p class="eyebrow">Gallery</p>
+          <h1>Browse the archive</h1>
+        </div>
+        <div id="album-toolbar" class="album-toolbar" aria-label="Album filter"></div>
+      </section>
+
+      <section class="container">
+        <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close photo viewer">×</button>
+      <button id="lightbox-prev" class="lightbox-nav prev" aria-label="Previous image">‹</button>
+      <div class="lightbox-frame">
+        <img id="lightbox-image" src="" alt="Expanded gallery photo" />
+      </div>
+      <button id="lightbox-next" class="lightbox-nav next" aria-label="Next image">›</button>
+      <div class="lightbox-meta">
+        <p id="lightbox-caption">Photo title</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Langton Family Photo Archive</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
